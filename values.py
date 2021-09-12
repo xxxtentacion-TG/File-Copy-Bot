@@ -1,0 +1,6 @@
+SESSION = "" 
+API_HASH = ""
+API_ID = 
+
+FROM_CHAT = 
+TO_CHAT = 
