@@ -3,7 +3,7 @@ from pyrogram.types.messages_and_media import message
 from values import API_ID, API_HASH, SESSION, FROM_CHAT, TO_CHAT, FILE_TYPE, CAPTION
 idss = []
 
-bot = Client(SESSION
+bot = Client(SESSION,
       api_id=API_ID,
       api_hash=API_HASH)
     
