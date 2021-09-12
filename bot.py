@@ -27,7 +27,7 @@ def copy_msg(client, message):
                m.edit(f"__Copied {c} Messages To Channel__")
                idss.clear() 
 
-    except Exception as x
+    except Exception as x:
        m.edit(f"Error Occurred: {x}")
 
 bot.run()
