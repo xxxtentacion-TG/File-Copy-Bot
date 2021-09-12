@@ -8,7 +8,7 @@ bot = Client("AQB_bqP9O7TE1Si3lHefMpofUsk0eo8azfva_X4fU0yu1KG0J0rX1q8y78fd5Z28Lp
       api_id=7259974,
       api_hash="bc262c77441e719e3cfc2eb61a948e7f")
     
-@bot.on_message(filters.command("copy", ".")    
+@bot.on_message(filters.command("copy", "."))
 def copy_msg(client, message):
     m = message.reply("__Checking The Files...__")
     for ids in bot.search_messages(chat_id=from_chat", filter="empty"):
