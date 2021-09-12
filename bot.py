@@ -15,7 +15,10 @@ def copy_msg(client, message):
     for ids in bot.search_messages(chat_id=from_chat, filter="empty"):
         msg_id = ids.message_id
         idss.append(msg_id)
-        bot.copy_message(chat_id=to_chat, from_chat_id=from_chat, message_id=msg_id)
+        bot.copy_message(chat_id=to_chat,
+                         from_chat_id=from_chat, 
+                         message_id=msg_id, 
+                         caption="**[© PSYCH0](https://t.me/PSYCH0_TG)**")
 
     else:
         if len(idss) == 0:
@@ -24,7 +27,7 @@ def copy_msg(client, message):
 
         else:
             c = len(idss)
-            m.edit("__Copied {c} Messages To Channel__")
+            m.edit(f"__Copied {c} Messages To Channel__")
             idss.clear() 
 
 bot.run()
